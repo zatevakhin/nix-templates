@@ -1,0 +1,6 @@
+.direnv/
+result
+.mix/
+.hex/
+_build/
+deps/
