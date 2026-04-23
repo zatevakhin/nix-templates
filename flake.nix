@@ -33,6 +33,16 @@
         '';
       };
 
+      bun = {
+        path = ./templates/bun;
+        description = "A minimal Nix flake for Bun development.";
+        welcomeText = ''
+          Bun template initialized.
+          Next: nix develop
+          Then: bun init
+        '';
+      };
+
       default = self.templates.rust;
     };
   };

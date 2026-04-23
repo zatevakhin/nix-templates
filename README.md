@@ -7,6 +7,7 @@ Self-contained `flake-parts` templates for reproducible development shells.
 - `rust`: Rust shell with `rust-overlay`, toolchain from `rust-toolchain.toml`, `pkg-config`, and `openssl`
 - `python`: Python shell with `python3`, `uv`, and `ruff`
 - `elixir`: Elixir shell with `elixir`, `erlang`, and `rebar3`
+- `bun`: Minimal Bun shell with only `bun`
 
 ## Usage
 
@@ -19,7 +20,7 @@ nix flake init -t github:zatevakhin/nix-templates#rust
 From local checkout of this repo:
 
 ```bash
-nix flake init -t path:../nix-templates#python
+nix flake init -t path:../nix-templates#rust
 ```
 
 Then enter the environment:
@@ -40,6 +41,9 @@ uv init
 
 # elixir
 mix new .
+
+# bun
+bun init
 ```
 
 ## Notes
